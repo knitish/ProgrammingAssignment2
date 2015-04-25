@@ -1,4 +1,4 @@
-## Creates a special "matrix" object that can cache its inverse.
+## catching matrix object here, remains same as prototype shown in example.
 
 makeCacheMatrix <- function(x = matrix()) {
   i  <- NULL
@@ -16,8 +16,9 @@ makeCacheMatrix <- function(x = matrix()) {
 }
 
 
-## Computes the inverse. If the inverse has already been calculated (and the matrix has not changed),
-## then the cachesolve should retrieve the inverse from the cach
+## solve function is used to create inverse of matrix as 
+## suggested by teacher. incsase cached, inverse will be 
+## cached one.
 
 cacheSolve <- function(x, ...) {
         ## Return a matrix that is the inverse of 'x'
